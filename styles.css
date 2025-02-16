@@ -1,3 +1,73 @@
-h1{
-    color: pink;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Office Code Pro Regular";
+}
+
+#main__title{
+    color: antiquewhite;
+
+}
+/* Awesome open-source fonts */
+@font-face {
+  font-family: "Office Code Pro Light";
+  src: url(fonts/OfficeCodePro-Light.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Office Code Pro Regular";
+  src: url(fonts/OfficeCodePro-Regular.ttf) format(truetype);
+}
+
+.heading{
+    background: #665f76;;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+}
+.navbar {
+    background: #665f76;
+    height: 80px;
+    display: flex; /* There is only one item inside the navbar-- the navbar__container. So I want that to be centered horizontally and vertically. */
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky; /* makes sure the navbar stays at the top, even if I scroll*/
+}
+
+/* Holds the menu navbar menu and the logo*/
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+/* Holds the navbar items*/
+.navbar__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar__link {
+    color:bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    padding: 0 1rem;
+}
+
+.navbar__link:hover {
+    background-color: greenyellow;
+    color: black; 
+    transition: all 0.3s ease;
 }
